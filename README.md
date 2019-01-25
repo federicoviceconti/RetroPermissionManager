@@ -2,7 +2,7 @@
 The easy way to handle permissions (for Android 4.4 and higher devices)
 
 ## How to use ##
-Permission manager are composed by two methods.
+Permission manager is composed by two methods.
 
 ###### requestPermission(config: ConfigParameter, onSuccessListener: OnSuccessListener, onFailureListener: OnFailureListener, onNeverAskAgainListener: OnNeverAskAgainListener, allPermissionsRecap: AllPermissionsRecap?) ######
 The first is requestPermission. This one require several parameters(params marked with '*' are required to be not null):
