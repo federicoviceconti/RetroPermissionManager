@@ -4,13 +4,13 @@ The easy way to handle permissions (for Android 4.4 and higher devices)
 ## How to use ##
 Permission manager are composed by two methods.
 
-###### requestPermission(config: ConfigParameter, onSuccessListener: OnSuccessListener, onFailureListener: OnFailureListener, onNeverAskAgainListener: OnNeverAskAgainListener, allPermissionRecap: AllPermissionRecap?) ######
+###### requestPermission(config: ConfigParameter, onSuccessListener: OnSuccessListener, onFailureListener: OnFailureListener, onNeverAskAgainListener: OnNeverAskAgainListener, allPermissionsRecap: AllPermissionsRecap?) ######
 The first is requestPermission. This one require several parameters(params marked with '*' are required to be not null):
 - *config: where we have to specify the list of permissions and the current activity
 - *onSuccessListener: called when permission is grant
 - *onFailureListener: called when permission is
 - *onNeverAskAgainListener: called when we check never ask
-- allPermissionRecap: called at the end and this one is not null
+- allPermissionsRecap: called at the end and this one is not null
 
 **Code example**
 
@@ -35,7 +35,7 @@ val config = PermissionManager.ConfigParameter(
                         Log.d("permission", "never ask: $type")
                     }
                 },
-                object: PermissionManager.AllPermissionRecap {
+                object: PermissionManager.AllPermissionsRecap {
                     override fun onAllOperationCompleted(listPermissions: List<Pair<PermissionType, Boolean>>) {
                         Log.d("permission", "all completed: $listPermissions")
                     }
