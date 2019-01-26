@@ -10,7 +10,7 @@ The first is requestPermission. This one require several parameters(params marke
 - *onSuccessListener: called when permission is grant
 - *onFailureListener: called when permission is
 - *onNeverAskAgainListener: called when we check never ask
-- allPermissionsRecap: called at the end and this one is not null
+- allPermissionsRecap: called at the end, when is not null
 
 **Code example**
 
